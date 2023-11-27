@@ -1,0 +1,96 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+.projects {
+    position: relative;
+    &__image {
+        position: relative;
+        margin-right: 20%;
+        &::before{
+        @include before(1,unset,unset,0%,0%,url(../images/svg/cicles.svg),(-50%,-50%),105px,105px);
+        }
+    }
+
+    &__content {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        z-index: 1;
+        @include media(480px){
+            left: 40px;
+            top: 80%;   
+        }
+        @include media(320px){
+            top: 60%;
+        }
+    }
+
+    &__about {
+        margin-left: 25%;
+    }
+
+    &__span {
+        color: $light-blue;
+    }
+
+    &__title {
+        font-size: 64px;
+        line-height: 120%;
+        max-width: 480px;
+        margin-bottom: 60px;
+        & span{
+            font-style: italic;
+            font-weight: 500;
+        }
+        &::before{
+            @include before(-1,unset,8%,0,unset,url(../images/svg/Ellipse.svg),(50%,-50%),);
+            @include media(768px){
+                right: unset;
+                left: 0;
+            }
+            @include media(320px){
+                display: none;
+            }
+        }
+        @include media(480px){
+            font-size: 48px;   
+        }
+        @include media(320px){
+            font-size: 36px;
+        }
+    }
+    &__next{
+        position: absolute;
+        max-width: 60px;
+        font-size: 14px;
+        line-height: 120%;
+        bottom: -200px;
+        &::before{
+            @include before(1,50px,unset,unset,0,url(../images/svg/Line-second.svg),(0,0),2px,84px);
+        }
+        @include media(480px){
+            display: none;   
+        }
+    }
+    &::before{
+        @include before(1,0,unset,unset,10%,url(../images/svg/Lines.svg),(0,0));
+    }
+}
+
+.project {
+
+    &__sub {
+    }
+
+    &__ceo-name {
+        font-size: 32px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    &__ceo {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,26 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+body{
+    background-color: $main-color;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    max-width: 1360px;
+    justify-content: center;
+    @include media(768px){
+        max-width: 648px;
+    }
+    @include media(480px){
+        max-width: 400px;
+    }
+    @include media(320px){
+        max-width: 300px;
+    }
+}

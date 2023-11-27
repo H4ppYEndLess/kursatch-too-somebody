@@ -1,0 +1,107 @@
+.footer {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 80px;
+}
+.footer__title {
+	font-size: 32px;
+	font-weight: 500;
+}
+.footer__email {
+	background-color: #052EFD;
+	color: white;
+	padding: 14px 29px;
+	-webkit-transition: 250ms ease-in;
+	transition: 250ms ease-in;
+	border: none;
+	font-size: 20px;
+	text-decoration-line: underline;
+	margin-bottom: 60px;
+	border: 1px solid transparent;
+}
+.footer__email:hover {
+	background-color: transparent;
+	border: 1px solid #052EFD;
+}
+.footer__left {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.footer__info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	color: #909090;
+	font-size: 18px;
+}
+.footer__phone {
+	margin-bottom: 12px;
+	max-width: 280px;
+}
+.footer__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 16px;
+}
+.footer__item {
+	-webkit-transition: 250ms ease-in;
+	transition: 250ms ease-in;
+}
+.footer__item:hover {
+	color: #909090;
+}
+.footer__list-title {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.footer__right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 140px;
+	margin-left: auto;
+}
+.footer__rights {
+	color: #909090;
+	margin-top: 76px;
+	position: relative;
+}
+.footer__rights::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #909090;
+	top: -10%;
+}
+.footer__icon {
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+.footer__content {
+	margin-top: 90px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+/*# sourceMappingURL=footer.css.map */
