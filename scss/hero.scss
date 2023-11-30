@@ -88,8 +88,9 @@
             margin-bottom: 30px;
         }
         @include media(480px){
-         font-size: 54px;   
+         font-size: 48px;   
          margin-bottom: 60px;
+         max-width: 50vw;
         }
         @include media(320px){
             font-size: 48px;
