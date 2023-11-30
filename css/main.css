@@ -168,8 +168,9 @@ body {
 }
 @media (max-width: 480px) {
 	.hero__title {
-		font-size: 54px;
+		font-size: 48px;
 		margin-bottom: 60px;
+		max-width: 50vw;
 	}
 }
 @media (max-width: 320px) {
