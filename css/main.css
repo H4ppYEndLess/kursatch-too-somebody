@@ -1402,6 +1402,8 @@ header {
 	-webkit-transition: 300ms ease-in;
 	transition: 300ms ease-in;
 	z-index: 9999999;
+	top: 0;
+	left: 0;
 }
 
 .is-hidden {
