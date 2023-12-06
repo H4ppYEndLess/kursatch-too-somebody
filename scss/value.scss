@@ -1,5 +1,5 @@
 .value {
-    padding: 172px 120px 296px 120px;
+    padding: 172px 120px 120px 120px;
     position: relative;
     @include media(320px){
         padding-top: 130px;
@@ -88,6 +88,7 @@
         @include media(480px){
             max-width: 400px;
             text-align: center;
+            padding-top: 10px;
         }
     }
 
