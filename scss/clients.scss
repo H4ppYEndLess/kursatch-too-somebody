@@ -7,10 +7,10 @@
         display: flex;
         max-width: 1120px;
         gap: 70px;
+        flex-wrap: wrap;
+        justify-content: center;
         @include media(768px){
-            flex-wrap: wrap;
             gap: 30px;
-            justify-content: center;
         }
     }
 

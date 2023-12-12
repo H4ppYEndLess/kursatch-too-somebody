@@ -16,11 +16,13 @@
         <a href="#">
             <img src="./images/svg/Logo.svg" alt="Creasy" class="logo" width="103px" height="27px">
         </a>
-        <ul class="navigation">
-            <li class="navigation__item"><a href="#work" class="navigation__link">our work</a></li>
-            <li class="navigation__item"><a href="#service" class="navigation__link">service</a></li>
-            <li class="navigation__item"><a href="#projects" class="navigation__link">products</a></li>
-        </ul>
+        <nav>
+            <ul class="navigation">
+                <li class="navigation__item"><a href="#work" class="navigation__link">our work</a></li>
+                <li class="navigation__item"><a href="#service" class="navigation__link">service</a></li>
+                <li class="navigation__item"><a href="#projects" class="navigation__link">products</a></li>
+            </ul>
+        </nav>
         <button type="button" class="navigation__sign-in">sign in 
             <svg class="navigation__button-icon"  width="17px" height="14px">
                 <use href="./images/svg/icons.svg#arrow"/>
@@ -31,7 +33,7 @@
         <section class="hero">
             <div class="hero__left">
                 <h1 class="hero__title">
-                    HandCreasy Agency
+                    Hand Creasy Agency
                 </h1>
                 <ul class="statistics">
                     <li class="statistics__item">
@@ -52,7 +54,7 @@
                 <p class="hero__description_top">
                     Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly.
                 </p>
-                <button class="hero__button" data-modal-open>
+                <button type="button" class="hero__button" data-modal-open>
                     get in touch
                     <svg class="hero__button-icon"  width="17px" height="14px">
                         <use href="./images/svg/icons.svg#arrow"/>
@@ -114,7 +116,7 @@
                     <h2 class="content__title">We are creasy people.</h2>
                     <p class="content__p">Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly.</p>
                     <p class="content__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                    <button class="content__button">
+                    <button class="content__button" type="button">
                         Learn More 
                         <svg  width="17px" height="14px">
                             <use href="./images/svg/icons.svg#arrow"/>
@@ -169,8 +171,8 @@
         </section>
         <section class="slider">
                     <div class="slider_projects swiper"  id="projects">
-                        <div class="swiper-wrapper slider__wrapper">
-                            <div class="swiper-slide slide">
+                        <ul class="swiper-wrapper slider__wrapper">
+                            <li class="swiper-slide slide">
                                 <img src="./images/abstract.png" height="auto"  width="100%"  alt="project">
                                 <a href="#" class="slide__link">see project</a>
                                 <div class="slide__description">
@@ -181,8 +183,8 @@
                                         branding
                                     </p>
                                 </div>
-                            </div>
-                            <div class="swiper-slide slide">
+                            </li>
+                            <li class="swiper-slide slide">
                                 <img src="./images/statue.png"  height="auto"  width="100%"  alt="project">
                                     <a href="#" class="slide__link">see project</a>
                                     <div class="slide__description">
@@ -194,8 +196,8 @@
                                         </p>
                                     </div>
                             
-                            </div>
-                            <div class="swiper-slide slide">
+                            </li>
+                            <li class="swiper-slide slide">
                                 <img src="./images/city.png"  height="auto"  width="100%"   alt="project">
                                 <a href="#" class="slide__link">see project</a>
                                 <div class="slide__description">
@@ -206,8 +208,8 @@
                                         branding
                                     </p>
                                 </div>
-                            </div>
-                            <div class="swiper-slide slide">
+                            </li>
+                            <li class="swiper-slide slide">
                                 <img src="./images/day.jpeg" height="auto"  width="100%"  alt="project">
                                 <a href="#" class="slide__link">see project</a>
                                 <div class="slide__description">
@@ -218,21 +220,20 @@
                                         branding
                                     </p>
                                 </div>
-                            </div>
-                            <div class="swiper-slide slide">
+                            </li>
+                            <li class="swiper-slide slide">
                                 <img src="./images/hurricane.jpeg"  height="100%"  width="auto"  alt="project">
-                                    <a href="#" class="slide__link">see project</a>
-                                    <div class="slide__description">
-                                        <h2 class="slide__title">
-                                            3D exploration
-                                        </h2>
-                                        <p class="slide__subtitle">
-                                            branding
-                                        </p>
-                                    </div>
-                            
-                            </div>
-                            <div class="swiper-slide slide">
+                                <a href="#" class="slide__link">see project</a>
+                                <div class="slide__description">
+                                    <h2 class="slide__title">
+                                        3D exploration
+                                    </h2>
+                                    <p class="slide__subtitle">
+                                        branding
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide slide">
                                 <img src="./images/night.jpeg"  height="auto"  width="100%"   alt="project">
                                 <a href="#" class="slide__link">see project</a>
                                 <div class="slide__description">
@@ -243,8 +244,8 @@
                                         branding
                                     </p>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 <div class="swiper-scrollbar"></div>
                 <div class="slider__buttons">
@@ -265,9 +266,9 @@
                         Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly.
                     </p>
                 </div>
-                <div class="variety">
-                    <div class="variety__block_left_top">marketing <span>//01</span></div>
-                    <div class="variety__block_big_right_middle">
+                <ul class="variety">
+                    <li class="variety__block_left_top">marketing <span>//01</span></li>
+                    <li class="variety__block_big_right_middle">
                         <h3 class="variety__title">
                             Design & Branding <span>//02</span>
                         </h3>
@@ -283,10 +284,10 @@
                             </svg>                        
                         </p>
                     </a>
-                    </div>
-                    <div class="variety__block_left_middle">Web & mobile apps <span>//03</span></div>
-                    <div class="variety__block_right_bottom">Interaction Design<span>//04</span></div>
-                </div>
+                    </li>
+                    <li class="variety__block_left_middle">Web & mobile apps <span>//03</span></li>
+                    <li class="variety__block_right_bottom">Interaction Design<span>//04</span></li>
+                </ul>
             </div>
         </section>
         <section class="feedback"  id="work">
@@ -424,7 +425,7 @@
                       <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
                       <polyline points="1 9 7 14 15 4"></polyline>
                     </svg>
-                    <span class="modal__span-text">I agree to the newsletter and accept the<a href="https://legal.ubi.com/privacypolicy/en-INTL" class="modal__span"> terms of the agreement</a></span>
+                    <span class="modal__span-text">I agree to the newsletter</span>
                   </label>
                 </li>
                 <li class="modal__li_button">

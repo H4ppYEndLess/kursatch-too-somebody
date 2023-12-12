@@ -6,7 +6,7 @@
     position: relative;
     margin-top: 00px;
     height: 100vh;
-    @include media(480px){
+    @include media(640px){
         width: 90vw;
         height: 90vh;
         margin: 0 40px;
@@ -29,9 +29,12 @@
         @include media(768px){
             top: 50vh;
         }
-        @include media(320px){
+        @include media(430px){
             bottom: 20vh;
             top: unset;
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
         }
     }
 
@@ -40,7 +43,11 @@
             max-width: 228px;
             text-align: left;
             color: $gray;
-            @include media(768px){
+            @include media(1200px){
+                text-align: right;
+                margin-left: auto;
+            }
+            @include media(1040px){
                 display: none;
             }
         }
@@ -51,6 +58,9 @@
             margin-left: auto;
             max-width: 360px;
             text-align: right;
+            @include media(850px){
+                max-width: 200px;
+            }
             @include media(768px){
                 display: none;
             }
@@ -87,7 +97,7 @@
         @include media(768px){
             margin-bottom: 30px;
         }
-        @include media(480px){
+        @include media(650px){
          font-size: 48px;   
          margin-bottom: 60px;
          max-width: 50vw;
@@ -123,7 +133,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    @include media(320px){
+    @include media(430px){
         display: none;   
     }
     &__item {

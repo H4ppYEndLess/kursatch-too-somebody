@@ -57,6 +57,7 @@
         @include media(480px){
             position: relative;
             flex-direction: row;
+            align-items: center;
         }
     }
 

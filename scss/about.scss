@@ -29,7 +29,7 @@
         @include media(480px){
             transform: translateX(0);
         }
-        @include media(320px){
+        @include media(440px){
             display: none;
         }
     }
@@ -47,7 +47,7 @@
         left: 40px;
         max-width: 400px;       
     }
-    @include media(320px){
+    @include media(370px){
         top: 10%;
         bottom: unset;
         left: 10px;
@@ -67,6 +67,7 @@
         @include media(480px){
             background-color: transparent;   
         }
+        
     }
     &__about{
         font-size: 16px;
@@ -79,7 +80,7 @@
         line-height: 120%;
         max-width: 480px;
         margin-bottom: 36px;
-        @include media(320px){
+        @include media(370px){
             font-size: 48px;
             text-align: center;
         }

@@ -49,6 +49,9 @@ header{
                 background-color: $blue;
                 border:1px solid $blue
             }
+            @include media(480px){
+                padding: 10px;
+            }
 		}
 
 		&__button-icon {
