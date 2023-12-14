@@ -9,7 +9,7 @@ const swiper = new Swiper('.slider_projects', {
         horizontalClass:'slider__scrollbar',
         dragSize: 'auto',
       },
-      // loop:true,
+      loop:true,
       slidesPerView:3,
       spaceBetween:70,
       centeredSlides:true,

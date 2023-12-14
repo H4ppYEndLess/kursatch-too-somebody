@@ -16,11 +16,11 @@
         left: 50%;
         top: 40%;
         z-index: 1;
-        @include media(480px){
+        @include media(635px){
             left: 40px;
             top: 80%;   
         }
-        @include media(320px){
+        @include media(420px){
             top: 60%;
         }
     }
@@ -36,7 +36,7 @@
     &__title {
         font-size: 64px;
         line-height: 120%;
-        max-width: 480px;
+        max-width: 635px;
         margin-bottom: 60px;
         & span{
             font-style: italic;
@@ -48,15 +48,15 @@
                 right: unset;
                 left: 0;
             }
-            @include media(320px){
+            @include media(420px){
                 display: none;
             }
         }
-        @include media(480px){
+        @include media(635px){
             font-size: 48px;   
         }
-        @include media(320px){
-            font-size: 36px;
+        @include media(420px){
+            font-size: 30px;
         }
     }
     &__next{
@@ -68,7 +68,7 @@
         &::before{
             @include before(1,50px,unset,unset,0,url(../images/svg/Line-second.svg),(0,0),2px,84px);
         }
-        @include media(480px){
+        @include media(635px){
             display: none;   
         }
     }

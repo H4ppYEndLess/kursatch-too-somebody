@@ -7,7 +7,7 @@
         @include media(768px){
         gap: 50px;
         }
-        @include media(480px){
+        @include media(635px){
             flex-direction: column;   
         }
     }
@@ -24,7 +24,7 @@
     &__text {
         font-size: 16px;
         line-height: 30px;
-        max-width: 480px;
+        max-width: 635px;
         margin-left: auto;
         position: relative;
         &::before{
@@ -49,7 +49,7 @@
     position: relative;
     margin-top: 95px;
     height: 800px;
-    @include media(480px){
+    @include media(635px){
         position: static;
         display: flex;     
         flex-direction: column;
@@ -66,7 +66,7 @@
                 border: 1px solid $blue;
                 max-width: 580px;
                 justify-content: space-between;
-                @include media(480px){
+                @include media(635px){
                     position: static;
                     padding: 16px 18px;
                     font-size: 24px;
@@ -85,11 +85,11 @@
                     padding: 32px 38px;
                     &::before{
                         @include before(1,unset,50%,0,unset,url(../images/svg/circles_white.svg),(50%,50%),67px,67px);
-                        @include media(480px){
+                        @include media(635px){
                             display: none;
                         }
                     }
-                    @include media(480px){
+                    @include media(635px){
                         position: static;
                         padding: 16px 18px;
                     }
@@ -109,7 +109,7 @@
                 font-size: 32px;
                 line-height: 120%;
                 border: 1px solid $blue;
-                @include media(480px){
+                @include media(635px){
                     position: static;
                     padding: 16px 18px;
                     width: 100%;
@@ -133,7 +133,7 @@
                 & span{
                     margin-left: auto;
                 }
-                @include media(480px){
+                @include media(635px){
                     position: static;
                     padding: 16px 18px;
                     width: 100%;
