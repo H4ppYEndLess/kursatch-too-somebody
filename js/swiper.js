@@ -19,10 +19,7 @@ const swiper = new Swiper('.slider_projects', {
       slideToClickedSlide:true,
       breakpoints: {
         // when window width is >= 320px
-        768:{
-          slidesPerView:2,
-        },
-        480:{
+        550:{
           slidesPerView:2,
         },
         0:{

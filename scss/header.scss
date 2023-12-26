@@ -23,7 +23,7 @@ header{
 .navigation {
     display: flex;
     gap: 48px;
-    @include media(480px){
+    @include media(830px){
         display: none;
     }
 		&__item {
@@ -49,8 +49,8 @@ header{
                 background-color: $blue;
                 border:1px solid $blue
             }
-            @include media(480px){
-                padding: 10px;
+            @include media(830px){
+                display: none;
             }
 		}
 

@@ -1,0 +1,138 @@
+.lock{
+    height: 100%;
+    overflow: hidden;
+}
+
+.section {
+    &_menu {
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 998;
+        left: -100%;
+        top: 0;
+        transition: 300ms ease-in;
+    }
+}
+header{
+    position: relative;
+}
+.menu {
+    padding: 25px;  
+    z-index: 5;
+    & *{
+        display: none;
+    }
+    &_active{
+        position: fixed;
+        background-color: $main-color;
+        height: 100%;
+        width: 100%;
+        z-index: 990;
+        left: 0;
+        top: 0;
+        transition: 300ms ease-in;
+        & *{
+            display: inherit
+        }
+    }
+    &__logo {
+        margin: 25px 0 0;
+    }
+
+    &__sign-in{
+        @include button();
+        display: flex;
+        align-items: center;
+        font-size: 48px;
+        transition: 250ms ease-in;
+        &:hover,
+        &:focus{
+            background-color: $blue;
+            border:1px solid $blue
+        }
+    }
+
+    &__list {
+        padding-top: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-size: 48px;
+        color: white;
+        margin-bottom: 15px;
+    }
+    &__link{
+        padding: 10px 15px;
+        border: 1px solid transparent;
+        text-transform: capitalize;
+        transition: 250ms ease-in;
+
+        & a{
+            width: 100%;
+            height: 100&;
+        }
+
+        &:hover,
+        &:focus{
+            border: 1px solid white;
+            border-radius: 3px;
+        }
+    }
+
+}
+
+.burger{
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    margin-left:auto;
+    z-index: 9999;
+    @include media(830px){
+            display: block;
+    }
+    &::before,
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    &::after{
+        bottom: 0;
+    }
+    &:before{
+        top: 0;
+    }
+    &::after,
+    &::before{
+        transform: rotate(180deg);
+        transition-duration: 300ms !important;
+    }
+    & span{
+        position: absolute;
+        background-color: transparent;
+    }
+    &_close{
+        position: absolute;
+        top: 25px;
+        right: 35px;  
+        z-index: 9999;          
+    }
+    &_opened{
+        &::before{
+            top: 50%;
+            transform: rotate(-45deg);
+            transition-duration: 300ms !important;
+        }
+        &::after{
+            top: 50%;
+            transform: rotate(45deg);
+            transition-duration: 300ms !important;
+        }             
+    }
+}

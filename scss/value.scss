@@ -1,5 +1,5 @@
 .value {
-    padding: 172px 120px 120px 120px;
+    padding: 172px 0 120px;
     position: relative;
     @include media(320px){
         padding-top: 130px;
@@ -96,7 +96,8 @@
         margin-right: auto;
         margin-top: auto;
         margin-bottom: 50px;
-        @include media(768px){
+        padding: 0 10px;
+        @include media(880px){
         position: absolute;
         top: 40%;
         }

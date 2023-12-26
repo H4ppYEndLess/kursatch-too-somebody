@@ -13,6 +13,24 @@
 </head>
 <body>
     <header>
+        <div class="section_menu menu" menu>   
+            <ul class="menu__list">
+                <li class="menu__link"><a href="#work">Our work</a></li>
+                <li class="menu__link"><a href="#service">Sevice</a></li>
+                <li class="menu__link"><a href="#projects">Products</a></li>
+            </ul>
+            <button type="button" class="menu__sign-in" data-modal-open>sign in 
+                <svg class="navigation__button-icon"  width="50px" height="40px">
+                    <use href="./images/svg/icons.svg#arrow"/>
+                </svg>
+            </button>
+            <a href="#" class="menu__link">
+                <img src="./images/svg/Logo.svg" alt="Creasy" class="menu__logo" width="80%" height="auto">
+            </a>
+        </div>
+        <button type="button" class="burger burger_close" open-menu>
+            <span></span>
+        </button>
         <a href="#">
             <img src="./images/svg/Logo.svg" alt="Creasy" class="logo" width="103px" height="27px">
         </a>
@@ -23,7 +41,7 @@
                 <li class="navigation__item"><a href="#projects" class="navigation__link">products</a></li>
             </ul>
         </nav>
-        <button type="button" class="navigation__sign-in">sign in 
+        <button type="button" class="navigation__sign-in" data-modal-open>sign in 
             <svg class="navigation__button-icon"  width="17px" height="14px">
                 <use href="./images/svg/icons.svg#arrow"/>
             </svg>
@@ -385,12 +403,12 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <h2 class="modal__title">Leave your data here, we will contact you</h2>
-              <form action="./php/send.php" method="post">
+              <form id="subscribe">
               <ul>
                 <li>
                   <label for="name" class="modal__label">Name</label>
                   <div class="modal__checkbox-fix">
-                  <input type="text" name="name" id="name" class="modal__input" required>
+                  <input type="text" id="name" class="modal__input" required>
                   <svg class="modal__icon" width="18px" height="18px">
                     <use href="./images/svg/icons.svg#man"></use>    
                   </svg>
@@ -399,24 +417,20 @@
                 <li>
                   <label for="phone" class="modal__label">Phone</label>
                   <div class="modal__checkbox-fix">
-                  <input type="tel" name="phone" id="phone" class="modal__input" required>
+                  <input type="tel" id="phone" class="modal__input" required>
                   <svg class="modal__icon" width="18px" height="18px">
                     <use href="./images/svg/icons.svg#telephone"></use>    
                   </svg>
                   </div>
                 </li>
                 <li>
-                  <label for="email"  class="modal__label">Email</label>
+                  <label for="email" class="modal__label">Email</label>
                   <div class="modal__checkbox-fix">
-                  <input type="email" name="email" id="email" class="modal__input" required>
+                  <input type="email" id="email" class="modal__input" required>
                   <svg class="modal__icon" width="18px" height="18px">
                     <use href="./images/svg/icons.svg#email"></use>    
                   </svg>
                   </div>
-                </li>
-                <li>
-                  <label for="comment" class="modal__label">Comment</label>
-                  <textarea name="comment" cols="30" rows="10" class="modal__textarea" placeholder="Text here"></textarea>
                 </li>
                 <li class="modal__li_checkbox"> 
                   <input type="checkbox" id="cbx" class="modal__checkbox-fix" style="display: none;">
@@ -425,11 +439,11 @@
                       <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
                       <polyline points="1 9 7 14 15 4"></polyline>
                     </svg>
-                    <span class="modal__span-text">I agree to the newsletter</span>
+                    <span class="modal__span-text">I agree to the newsletter</a></span>
                   </label>
                 </li>
                 <li class="modal__li_button">
-                  <button type="submit" class="modal__submit">Send</button>
+                  <button class="modal__submit" type="submit">Send</button>
                 </li>
               </ul>
               <button type="button" class="modal__exit-button" data-modal-close>
@@ -444,6 +458,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/swiper.js"></script>  
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </main>    
 </body>
 </html>
