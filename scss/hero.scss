@@ -9,7 +9,7 @@
     @include media(640px){
         width: 90vw;
         height: 90vh;
-        margin: 0 40px;
+        margin: 0;
     }
     @include media(320px){
         margin: 0 10px;   
@@ -17,7 +17,7 @@
     &__left{
         position: absolute;
         top: 0;
-        left: 0;
+        left: 10px;
         z-index: 3;
         @include media(430px){
             left: 50%;
@@ -119,6 +119,11 @@
         position: absolute;
         left: 50%;
         top: 50px;
+        @include media(480px){
+            left: -40px;
+            top: 0;
+            transform: translate(0);   
+        }
         @include media(480px){
             left: -40px;
             top: 0;

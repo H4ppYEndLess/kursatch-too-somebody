@@ -3,14 +3,11 @@
 
 .footer {
     flex-direction: column;
-    padding: 80px;
-    @include media(768px){
-    padding: 80px 0
-    }
+    padding: 80px 0 20px;
     &__title {
         font-size: 32px;
         font-weight: 500;
-        @include media(768px){
+        @include media(830px){
         text-align: center;
         }
     }
@@ -25,7 +22,7 @@
             background-color: transparent;
             border: 1px solid $blue;
         }
-        @include media(768px){
+        @include media(830px){
         margin-bottom: 30px;
         }
     }
@@ -33,7 +30,7 @@
     &__left{
         display: flex;
         flex-direction: column;
-        @include media(768px){
+        @include media(830px){
             margin-bottom: 30px;
         }
         
@@ -87,14 +84,15 @@
 
     &__right {
         display: flex;
-        gap: 140px;
         margin-left: auto;
-        @include media(768px){
+        flex: 1;
+        justify-content: space-around;
+        @include media(830px){
             margin: 0;
+            gap: 70px;
         }
         @include media(600px){
             flex-direction: column;
-            gap:60px;
             margin-top: 40px;
             padding: 0 15px;
         }
@@ -121,9 +119,13 @@
         margin-top: 90px;
         display: flex;
         align-items: center;
-        @include media(768px){
+        gap: 25px;
+        @include media(830px){
             margin-top: 40px;
-            flex-direction: column;
+            flex-direction: column;   
+        }
+        @include media(600px){
+            align-items: unset;
         }
     }
 }
