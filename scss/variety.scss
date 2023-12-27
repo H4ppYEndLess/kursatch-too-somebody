@@ -1,0 +1,177 @@
+.services {
+    flex-direction: column;
+    padding: 0 20px;
+    &__description {
+        display: flex;
+        align-items: center;
+        @include media(768px){
+        gap: 50px;
+        }
+        @include media(635px){
+            flex-direction: column;   
+        }
+    }
+
+    &__name {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    &__span {
+        color: $light-blue;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 635px;
+        margin-left: auto;
+        position: relative;
+        &::before{
+            @include before(1,unset,0%,-100%,unset, url(../images/svg/Lines.svg),(0),2px,138px);
+            transform: rotate(90deg);        
+            @include media(768px){
+                right: unset;
+                left: 50%;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 64px;
+        line-height: 120%;
+        margin-top: 15px;
+        max-width: 515px;
+        font-weight: 400;
+    }
+}
+.variety {
+    position: relative;
+    margin-top: 95px;
+    height: 800px;
+    @include media(635px){
+        position: static;
+        display: flex;     
+        flex-direction: column;
+        height: auto;
+    }
+    &__block {
+
+        &_left {
+            &_top{
+                display: flex;
+                padding: 32px 38px;
+                font-size: 32px;
+                line-height: 120%;
+                border: 1px solid $blue;
+                max-width: 580px;
+                justify-content: space-between;
+                @include media(635px){
+                    position: static;
+                    padding: 16px 18px;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &_big {
+            &_right {
+                &_middle{
+                    position: absolute;
+                    background-color: $blue;
+                    right: 0;
+                    top: 15%;
+                    max-width: 580px;
+                    padding: 32px 38px;
+                    &::before{
+                        @include before(1,unset,50%,0,unset,url(../images/svg/circles_white.svg),(50%,50%),67px,67px);
+                        @include media(635px){
+                            display: none;
+                        }
+                    }
+                    @include media(635px){
+                        position: static;
+                        padding: 16px 18px;
+                    }
+                }
+            }
+        }
+
+        &_left {
+            &_middle{
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                left: 0;
+                bottom: 15%;
+                width: 580px;
+                padding: 32px 38px;
+                font-size: 32px;
+                line-height: 120%;
+                border: 1px solid $blue;
+                @include media(635px){
+                    position: static;
+                    padding: 16px 18px;
+                    width: 100%;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &_right {
+            &_bottom{
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 580px;
+                padding: 32px 38px;
+                font-size: 32px;
+                line-height: 120%;
+                border: 1px solid $blue;
+                & span{
+                    margin-left: auto;
+                }
+                @include media(635px){
+                    position: static;
+                    padding: 16px 18px;
+                    width: 100%;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    &__content {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    &__learn-more {
+        margin-top: 120px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 130px;
+        & svg{
+            margin-left: 17px;
+        }
+        &:hover::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $light-blue;
+        }
+    }
+}

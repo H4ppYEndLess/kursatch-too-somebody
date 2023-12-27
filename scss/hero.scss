@@ -1,0 +1,161 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+.hero {
+    margin: 0 120px;
+    position: relative;
+    margin-top: 00px;
+    height: 100vh;
+    @include media(640px){
+        width: 90vw;
+        height: 90vh;
+        margin: 0;
+    }
+    @include media(320px){
+        margin: 0 10px;   
+    }
+    &__left{
+        position: absolute;
+        top: 0;
+        left: 10px;
+        z-index: 3;
+        @include media(430px){
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__right{
+        position: absolute;
+        top: 50px;
+        right: 0;   
+        z-index: 3;
+        @include media(768px){
+            top: 50vh;
+        }
+        @include media(430px){
+            bottom: 20vh;
+            top: unset;
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__description {
+        &_top {
+            max-width: 228px;
+            text-align: left;
+            color: $gray;
+            @include media(1200px){
+                text-align: right;
+                margin-left: auto;
+            }
+            @include media(1040px){
+                display: none;
+            }
+        }
+
+        &_bottom {
+            font-size: 12px;
+            margin-top: auto;
+            margin-left: auto;
+            max-width: 360px;
+            text-align: right;
+            @include media(850px){
+                max-width: 200px;
+            }
+            @include media(768px){
+                display: none;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        margin-left: auto;
+        @include button(12px 24px, $blue,);
+        margin-top: 150px;
+        margin-bottom: 150px;
+        align-items: center;
+        &:hover,
+        &:focus{
+            background-color: transparent;
+            border: 1px solid $blue;
+        }
+        @include media(768px){
+            margin: 0;
+        }
+    }
+
+    &__button-icon {
+        margin-left: 17px;
+        transform: rotate(-45deg);
+    }
+
+    &__title {
+        font-size: 84px;
+        font-weight: 600;
+        margin-bottom: 80px;
+        max-width: 630px;
+        @include media(768px){
+            margin-bottom: 30px;
+        }
+        @include media(650px){
+         font-size: 48px;   
+         margin-bottom: 60px;
+         max-width: 50vw;
+        }
+        @include media(320px){
+            font-size: 48px;
+            max-width: 50vw;
+        }
+        
+    }
+
+    &__image {
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        top: 50px;
+        @include media(480px){
+            left: -40px;
+            top: 0;
+            transform: translate(0);   
+        }
+        @include media(480px){
+            left: -40px;
+            top: 0;
+            transform: translate(0);   
+        }
+        & img{
+            width: 520px;
+            position: relative;
+            @include media(480px){
+                width: 100vw;
+            }
+        }
+    }
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include media(430px){
+        display: none;   
+    }
+    &__item {
+    }
+
+    &__counter {
+        color: $light-blue;
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    &__title {
+    }
+    
+}

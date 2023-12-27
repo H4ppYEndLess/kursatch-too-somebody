@@ -1,0 +1,25 @@
+@mixin button($padd: 12px 24px, $bg:$main-color, $color:white,$border:1px solid $blue){
+    background-color: $bg;
+    color: $color;
+    padding: $padd;
+    transition: 250ms ease-in;
+    border: $border;
+}
+
+@mixin before($z-index:45, $top:0, $right:unset,$bottom:unset,$left:0, $url, $transform:(-50%, -50%), $width:172px, $height:172px){
+        position: absolute;
+        display: block;
+        z-index: $z-index;
+        content: $url;
+        width: $width;
+        height: $height;
+        transform: translate($transform);
+        top: $top;
+        left: $left;
+        right: $right;
+        bottom: $bottom;   
+}
+
+@mixin media($max-width){
+    @media(max-width:$max-width){@content}
+}

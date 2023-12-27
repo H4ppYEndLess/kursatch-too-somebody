@@ -1,0 +1,110 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+.about {
+    padding: 172px 0 0 0;
+    position: relative;
+    @include media(320px){
+        padding-top: 75px;
+    }
+    &::before{
+        @include before(45, 50%, unset, unset, 10%, url(../images/svg/ar.svg), (0,0), 600px,2px);
+        @include media(480px){
+            display: none;   
+        }
+
+    }
+    & img{
+        @include media(480px){
+            width: 100vw;   
+        }
+    }
+}
+
+.rel{
+    margin-left: auto;
+    position: relative;
+    &::after {
+        @include before(45, unset, 0,0,unset,url(../images/svg/cicles.svg), (50%, 50%), 105px, 105px);
+        @include media(480px){
+            transform: translateX(0);
+        }
+        @include media(440px){
+            display: none;
+        }
+    }
+    @include media(480px){
+     margin: 0;       
+    }
+}
+
+.content{
+    position: absolute;
+    top: 225px;
+    left: 30%;
+    z-index: 2;
+    @include media(480px){
+        left: 40px;
+        max-width: 400px;       
+    }
+    @include media(370px){
+        top: 10%;
+        bottom: unset;
+        left: 10px;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        & svg{
+            margin-left: 17px
+        }
+        @include button();
+        margin-top: 60px;
+        &:hover{
+            background-color: $blue;
+            border: 1px solid $blue;
+        }
+        @include media(480px){
+            background-color: transparent;   
+        }
+        
+    }
+    &__about{
+        font-size: 16px;
+    }
+    &__span{
+        color: $light-blue;
+    }
+    &__title {
+        font-size: 64px;
+        line-height: 120%;
+        max-width: 480px;
+        margin-bottom: 36px;
+        @include media(370px){
+            font-size: 48px;
+            text-align: center;
+        }
+    }
+    &__p{
+        max-width: 380px;
+        margin-top: 24px;
+        &:not(:first-child){
+            max-width: 490px;
+        }
+        @include media(320px){
+            max-width: 80vw ;
+        }
+    }
+    &::before{
+        display: block;
+        z-index: -1;
+        position: absolute;
+        content: url(../images/svg/Ellipse.svg);
+        width: 172px;
+        height: 172px;
+        transform: translate(-50%, -50%);
+        @include media(320px){
+            display: none;
+        }
+    }
+}
