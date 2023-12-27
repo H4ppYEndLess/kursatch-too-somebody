@@ -358,9 +358,14 @@ header {
 	padding-top: 500px;
 	padding-bottom: 300px;
 }
-@media (max-width: 320px) {
+@media (max-width: 635px) {
 	.slider {
-		padding: 200px 0 100px 0;
+		padding: 300px 0 75px;
+	}
+}
+@media (max-width: 420px) {
+	.slider {
+		padding: 150px 0 75px;
 	}
 }
 .slider__scrollbar {

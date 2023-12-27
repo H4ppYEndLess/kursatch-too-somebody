@@ -8,8 +8,11 @@
 .slider {
     padding-top: 500px;
     padding-bottom: 300px;
-    @include media(320px){
-        padding: 200px 0 100px 0;
+    @include media(635px){
+        padding: 300px 0 75px;
+    }
+    @include media(420px){
+        padding: 150px 0 75px;
     }
     &__scrollbar {
         background-color: white !important;
